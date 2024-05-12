@@ -111,12 +111,6 @@ class TD3_N(object):
         action = self.actor(state)
         return action.cpu().data.numpy().flatten()
 
-    def Q(self, state, action):
-        state = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
-        action = torch.FloatTensor(action.reshape(1, -1)).to(self.device)
-        q_e = self.critic1(state, action)[0]
-        return q_e.cpu().data.numpy().flatten()
-
     def train(self, replay_buffer, batch_size=100):
         self.total_it += 1
 
