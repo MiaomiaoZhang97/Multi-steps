@@ -9,9 +9,13 @@ Networks are trained using [torch 1.3.0](https://github.com/pytorch/pytorch) and
 ## Citation
 If you find our work helpful, please consider cite our work.
 ```
-@inproceedings{Efficient2024zhang,
-  title={Efficient Reinforcement Learning with the novel N-Step Method and V-network}，
-  author={Zhang, Miaomiao and Zhang, Shuo and Wu, Xinying and Shi, Zhiyi and Deng, Xiangyang and  Wu, Edmond Q. and Xu, Xin},
-  journal={IEEE Transactions on Cybernetics},
-  year={2024,DOI: 10.1109/TCYB.2024.3401014},
-}
+@ARTICLE{NTD3,
+  author={Zhang, Miaomiao and Zhang, Shuo and Wu, Xinying and Shi, Zhiyi and Deng, Xiangyang and Wu, Edmond Q. and Xu, Xin},
+  journal={IEEE Transactions on Cybernetics}, 
+  title={Efficient Reinforcement Learning With the Novel N-Step Method and V-Network}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/TCYB.2024.3401014}}
+
