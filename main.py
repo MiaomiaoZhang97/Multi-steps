@@ -35,7 +35,7 @@ def eval_policy(policy, env_name, seed, eval_episodes=10, eval_cnt=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     #parser.add_argument("--dir", default="./logs")
-    parser.add_argument("--policy", default="DDPG")
+    parser.add_argument("--policy", default="TD3_N")
     parser.add_argument("--env", default="HalfCheetah-v3")
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument("--start-steps", default=1e4, type=int,
