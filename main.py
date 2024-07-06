@@ -36,7 +36,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     #parser.add_argument("--dir", default="./logs")
     parser.add_argument("--policy", default="TD3_N")
-    parser.add_argument("--env", default="HalfCheetah-v3")
+    parser.add_argument("--env", default="Walker2d-v3")
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument("--start-steps", default=1e4, type=int,
                         help='Number of steps for the warm-up stage using random policy')
@@ -44,10 +44,10 @@ if __name__ == "__main__":
     parser.add_argument("--steps", default=1e6, type=int, help='Maximum number of steps')
 
     parser.add_argument("--discount", default=0.99, help='Discount factor')
-    parser.add_argument("--lambda", default=0.8, type=float)
+    parser.add_argument("--lambda", default=0.9, type=float)
     parser.add_argument("--tau", default=0.005, type=float, help='Target network update rate')
 
-    parser.add_argument("--alpha", default=0.005, type=float)
+    parser.add_argument("--alpha", default=0.001, type=float)
 
     parser.add_argument("--actor-lr", default=1e-3, type=float)
     parser.add_argument("--critic-lr", default=1e-3, type=float)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     parser.add_argument("--noise-clip", default=0.5, type=float)  # Range to clip target policy noise
 
     parser.add_argument("--policy-freq", default=2, type=int, help='Frequency of delayed policy updates')
-    parser.add_argument("--N-step", default=2, type=int)
+    parser.add_argument("--N-step", default=100, type=int)
 
     args = parser.parse_args()
 
